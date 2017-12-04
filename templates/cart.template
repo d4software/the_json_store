@@ -1,1 +1,5 @@
-<h1>Your cart</h1>
+<div class="container">
+    <h1>Your cart</h1>
+    <div id="main" class="cart-list">
+    </div>
+</div>

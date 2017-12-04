@@ -10,12 +10,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 #header {
-  background: #DB36A4;
   margin: 0px;
   padding: 20px;
 }
 #header h1 {
-  color: #FFF;
+  color: #DB36A4;
   margin: 0px;
 }
 #header .cart-info {
@@ -24,6 +23,8 @@ body {
   right: 0px;
   text-align: right;
   padding: 10px;
+  margin: 10px;
+  border-radius: 3px;
   background:#0c7f9c;
   color: #FFF;
   font-size: 12px;
@@ -66,7 +67,7 @@ img {
   height: auto;
 }
 #homepage-link {
-  color: white;
+  color: #DB36A4;
 }
 
 div.cart-info a {
@@ -88,4 +89,9 @@ p.text-muted {
 
 .img-rounded {
   width: 256px;
+}
+
+.btn-buy {
+  background: linear-gradient(135deg, #0c7f9c 0%, #dc3f95 100%);
+  border: grey;
 }

@@ -5,8 +5,8 @@
 
   <div class="col-md 6">
       <div class="item-info">
-          <h1><%= item.artist %></h1>
-          <h2><%= item.title %></h2>
+          <h1><%= item.title %></h1>
+          <h2><%= item.artist %></h2>          
           <div class="item-price">$<%= item.price %></div>
           <div class="item-form">
             <form class="form-inline" action="#/cart" method="post">
@@ -17,10 +17,10 @@
                 <input id="item-qty" class="form-control" type="number" size="2" name="quantity" value="1" />
                 </div>
               </p>
-              <p><input id="add-to-cart" class="btn btn-primary" type="submit" value="Add to Cart" /></p>
+              <p><input id="add-to-cart" class="btn btn-primary btn-buy" type="submit" value="Add to Cart" /></p>
             </form>
           </div>
-          <div class="back-link"><a href="#/">&laquo; Back to Items</a></div>
+          <div class="back-link"><a href="#/"><i class="glyphicon glyphicon-chevron-left"></i> Back to Items</a></div>
         </div>
   </div>
 

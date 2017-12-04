@@ -55,8 +55,8 @@
       });
       $('.cart-info')
           .find('.cart-items').text(sum).end()
-          .animate({paddingTop: '30px'})
-          .animate({paddingTop: '10px'});
+          .animate({marginTop: '30px'})
+          .animate({marginTop: '10px'});
     });
 
     this.bind('run', function() {
