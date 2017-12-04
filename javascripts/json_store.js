@@ -27,6 +27,10 @@
       this.partial('templates/item_detail.template');
     });
 
+    this.get('#/cart/', function(context) {
+      this.partial('templates/cart.template');
+    });
+
     this.post('#/cart', function(context) {
       var item_id = this.params['item_id'];
       // fetch the current cart
