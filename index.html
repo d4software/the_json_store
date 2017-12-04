@@ -5,25 +5,39 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-  <title>The JSON Store</title>
+  <title>Prodlytic Example Store</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8"/>
   <link rel="stylesheet" href="stylesheets/jsonstore.css" type="text/css" media="screen" charset="utf-8"/>
 </head>
 <body>
-  <div id="container">
     <div id="header">
-      <h1>The JSON Store</h1>
+      <h1><a href="/" id="homepage-link">Prodlytic Example Store</a></h1>
       <div class="cart-info">
         My Cart (<span class="cart-items">0</span> items)
       </div>
     </div>
-    <div id="main">
+  <div class="container">
+    <h1>Products</h1> 
+    <br> 
+    <div id="main" class="product-list">
     </div>
   </div>
-<script src="javascripts/jquery-1.4.2.js" type="text/javascript" charset="utf-8"></script>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted">This is an example site to demonstrate <a href="https://prodlytic">Prodlytic</a> - you can't buy these items here.</h1></p>
+    </div>
+  </footer>
+
+<script
+src="https://code.jquery.com/jquery-2.2.4.min.js"
+integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+crossorigin="anonymous"></script>
 <script src="javascripts/sammy/sammy.js" type="text/javascript" charset="utf-8"></script>
 <script src="javascripts/sammy/plugins/sammy.template.js" type="text/javascript" charset="utf-8"></script>
 <script src="javascripts/sammy/plugins/sammy.json.js" type="text/javascript" charset="utf-8"></script>
 <script src="javascripts/sammy/plugins/sammy.storage.js" type="text/javascript" charset="utf-8"></script>
 <script src="javascripts/json_store.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
