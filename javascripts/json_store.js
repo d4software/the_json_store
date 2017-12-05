@@ -1,4 +1,4 @@
-(function($) {
+var app = (function($) {
 
   var app = $.sammy('#main', function() {
     this.use('Template');
@@ -28,21 +28,36 @@
     });
 
     this.get('#/cart/', function(context) {
-      this.partial('templates/cart.template');
+      this.partial('templates/cart.template') .then (
+        function(){
+        $.each(app.session("cart"), function(i, item){
+          Object.assign(item, context.items[item.id]);
+          context.render('templates/cart-item.template', item)
+            .appendTo($('#cart-main'));
+        })
+      });
     });
 
     this.post('#/cart', function(context) {
       var item_id = this.params['item_id'];
       // fetch the current cart
       var cart  = this.session('cart', function() {
-        return {};
+        return [];
       });
-      if (!cart[item_id]) {
-        // this item is not yet in our cart
-        // initialize its quantity with 0
-        cart[item_id] = 0;
+
+      var existing_item = null;
+      $.each(cart, function(i, cart_item) {
+        if (cart_item.id === item_id) {
+          existing_item = cart_item;
+        }
+      })
+      if (existing_item == null) {
+        existing_item = { id: item_id, quantity: 0 }
+        cart.push(existing_item);
       }
-      cart[item_id] += parseInt(this.params['quantity'], 10);
+
+      existing_item.quantity += parseInt(this.params['quantity'], 10);     
+
       // store the cart
       this.session('cart', cart);
       this.trigger('update-cart');
@@ -50,8 +65,8 @@
 
     this.bind('update-cart', function() {
       var sum = 0;
-      $.each(this.session('cart') || {}, function(id, quantity) {
-        sum += quantity;
+      $.each(this.session('cart') || [], function(id, cart_item) {
+        sum += cart_item.quantity;
       });
       $('.cart-info')
           .find('.cart-items').text(sum).end()
@@ -69,5 +84,7 @@
   $(function() {
     app.run('#/');
   });
+
+  return app;
 
 })(jQuery);
