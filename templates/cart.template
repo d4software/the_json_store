@@ -2,4 +2,15 @@
     <h1>Your cart</h1>
     <div id="cart-main" class="cart-list">
     </div>
+    <div class="text-center">
+    <button id="empty-cart" class="btn btn-danger btn-sm" onclick="javascript:emptycart()">Empty cart</button>  
+    <button id="empty-cart" class="btn btn-primary btn-buy">Finish &amp; pay</button>  
+    </div>  
 </div>
+
+<script>
+  function emptycart(){
+    app.session("cart", []);
+    window.location.reload();
+  };
+</script>

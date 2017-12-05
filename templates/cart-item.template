@@ -1,12 +1,13 @@
 <div class="row">
     <div class="col-md-3">
-        image
+        <a href="#/item/<%= id %>"><img class="img-rounded thumbnail" src="<%= image %>" alt="<%= title %>" /></a>            
     </div>
     <div class="col-md-6">
-            <%= artist %> - <%= title %> (Qty <%= quantity %>)
+            <p><%= artist %> - <%= title %></p>
+            <p>(Qty <%= quantity %>), total: $<%= quantity * price %></p>
     </div>   
     <div class="col-md-3">
-            controls
+            <button id="remove-item" class="btn btn-warning btn-sm">Remove item</button>
     </div>   
-    
 </div>
+

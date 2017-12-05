@@ -95,3 +95,8 @@ p.text-muted {
   background: linear-gradient(135deg, #0c7f9c 0%, #dc3f95 100%);
   border: grey;
 }
+
+.thumbnail {
+  width: 128px;
+  height: 128px;
+}
