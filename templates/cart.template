@@ -4,7 +4,7 @@
     </div>
     <div class="text-center">
     <button id="empty-cart" class="btn btn-danger btn-sm" onclick="javascript:emptycart()">Empty cart</button>  
-    <button id="empty-cart" class="btn btn-primary btn-buy">Finish &amp; pay</button>  
+    <button id="checkout" class="btn btn-primary btn-buy">Finish &amp; pay</button>  
     </div>  
 </div>
 
@@ -13,4 +13,9 @@
     app.session("cart", []);
     window.location.reload();
   };
+
+  function removeitem(id){
+    app.session("cart", app.session("cart").filter(function(item) { return item.id != id }));
+    window.location.reload();    
+  }
 </script>

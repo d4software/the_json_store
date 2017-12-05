@@ -3,11 +3,11 @@
         <a href="#/item/<%= id %>"><img class="img-rounded thumbnail" src="<%= image %>" alt="<%= title %>" /></a>            
     </div>
     <div class="col-md-6">
-            <p><%= artist %> - <%= title %></p>
-            <p>(Qty <%= quantity %>), total: $<%= quantity * price %></p>
+            <p><strong><%= artist %> - <%= title %></strong></p>
+            <p class="text-muted">Quantity <%= quantity %>, total: $<%= quantity * price %></p>
     </div>   
     <div class="col-md-3">
-            <button id="remove-item" class="btn btn-warning btn-sm">Remove item</button>
+            <button id="remove-item" class="btn btn-warning btn-sm" onclick="javascript:removeitem(<%= id %>)">Remove item</button>
     </div>   
 </div>
 
