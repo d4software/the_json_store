@@ -11,7 +11,6 @@
             <form class="form-horizontal">
                     <fieldset>
                     
-                    <!-- Text input-->
                     <div class="form-group">
                       <label class="col-md-4 control-label" for="name">Your name</label>  
                       <div class="col-md-4">
@@ -20,7 +19,6 @@
                       </div>
                     </div>
                     
-                    <!-- Text input-->
                     <div class="form-group">
                       <label class="col-md-4 control-label" for="housenum">House number</label>  
                       <div class="col-md-4">
@@ -29,7 +27,6 @@
                       </div>
                     </div>
                     
-                    <!-- Text input-->
                     <div class="form-group">
                       <label class="col-md-4 control-label" for="postcode">Postal code</label>  
                       <div class="col-md-4">
@@ -40,7 +37,6 @@
                     
                     <hr>
 
-                    <!-- Prepended text-->
                     <div class="form-group">
                       <label class="col-md-4 control-label" for="cardno">Payment card number</label>
                       <div class="col-md-4">
@@ -52,7 +48,6 @@
                       </div>
                     </div>
                     
-                    <!-- Prepended text-->
                     <div class="form-group">
                       <label class="col-md-4 control-label" for="cardexpiry">Expiry date</label>
                       <div class="col-md-4">
@@ -64,7 +59,6 @@
                       </div>
                     </div>
                     
-                    <!-- Prepended text-->
                     <div class="form-group">
                       <label class="col-md-4 control-label" for="cvv">Card security code</label>
                       <div class="col-md-4">
@@ -83,4 +77,5 @@
     <div class="text-center">
     <a id="complete-order" class="btn btn-primary btn-buy" href="https://prodlytic.com">Complete order</a>  
     </div>  
+    <br>
 </div>
