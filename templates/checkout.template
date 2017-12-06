@@ -1,0 +1,86 @@
+<div class="container">
+    <h1>Checkout</h1>
+    <div id="checkout-main" class="checkout-list">
+
+    <div>
+        <h2>Order total: $<%= total %></h2>
+    </div>
+
+    <hr>
+
+            <form class="form-horizontal">
+                    <fieldset>
+                    
+                    <!-- Text input-->
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="name">Your name</label>  
+                      <div class="col-md-4">
+                      <input id="name" name="name" placeholder="first last" class="form-control input-md" type="text">
+                        
+                      </div>
+                    </div>
+                    
+                    <!-- Text input-->
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="housenum">House number</label>  
+                      <div class="col-md-4">
+                      <input id="housenum" name="housenum" placeholder="99" class="form-control input-md" type="text">
+                        
+                      </div>
+                    </div>
+                    
+                    <!-- Text input-->
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="postcode">Postal code</label>  
+                      <div class="col-md-4">
+                      <input id="postcode" name="postcode" placeholder="B3 1QS" class="form-control input-md" type="text">
+                        
+                      </div>
+                    </div>
+                    
+                    <hr>
+
+                    <!-- Prepended text-->
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="cardno">Payment card number</label>
+                      <div class="col-md-4">
+                        <div class="input-group">
+                          <span class="input-group-addon">Card #</span>
+                          <input id="cardno" name="cardno" class="form-control" placeholder="" type="text" maxlength="16">
+                        </div>
+                        <p class="help-block">The long number from the front of your card</p>
+                      </div>
+                    </div>
+                    
+                    <!-- Prepended text-->
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="cardexpiry">Expiry date</label>
+                      <div class="col-md-4">
+                        <div class="input-group">
+                          <span class="input-group-addon">Expiry</span>
+                          <input id="cardexpiry" name="cardexpiry" class="form-control" placeholder="MMYY" type="text" maxlength="4">
+                        </div>
+                        <p class="help-block">Enter as MMYY</p>
+                      </div>
+                    </div>
+                    
+                    <!-- Prepended text-->
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="cvv">Card security code</label>
+                      <div class="col-md-4">
+                        <div class="input-group">
+                          <span class="input-group-addon">CV2</span>
+                          <input id="cvv" name="cvv" class="form-control" placeholder="" type="text" maxlength="3">
+                        </div>
+                        <p class="help-block">From the back of your card</p>
+                      </div>
+                    </div>
+                    
+                    </fieldset>
+                    </form>
+                    
+    </div>
+    <div class="text-center">
+    <a id="complete-order" class="btn btn-primary btn-buy" href="https://prodlytic.com">Complete order</a>  
+    </div>  
+</div>

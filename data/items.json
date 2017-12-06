@@ -3,24 +3,32 @@
     "title": "Our Love (2014)",
     "artist": "Caribou",
     "image": "https://images-na.ssl-images-amazon.com/images/I/61ity00CUJL.jpg",
-    "price": 9.98
+    "price": 10,
+    "category": "vinyl",
+    "amazon": "http://amzn.to/2AUqc9V"
   },
   {
     "title": "A Moon Shaped Pool (2016)",
     "artist": "Radiohead",
     "image": "https://images-na.ssl-images-amazon.com/images/I/81yzDHiewYL._SL1000_.jpg",
-    "price": 13.98
+    "price": 14,
+    "category": "vinyl",
+    "amazon": "http://amzn.to/2AcGo6N"
   },
   {
     "title": "Sleep Well Beast (2017)",
     "artist": "The National",
     "image": "https://images-na.ssl-images-amazon.com/images/I/51hQsKd9x5L.jpg",
-    "price": 13.98
+    "price": 14,
+    "category": "vinyl",
+    "amazon": "http://amzn.to/2AfzNsc"
   },
   {
     "title": "Carrie &amp; Lowell (2015)",
     "artist": "Sufjan Stevens",
     "image": "https://images-na.ssl-images-amazon.com/images/I/81b%2BUcMfhCL._SL1400_.jpg",
-    "price": 13.99
+    "price": 16,
+    "category": "vinyl",
+    "amazon": "http://amzn.to/2jZnzJg"
   }
 ]

@@ -4,7 +4,7 @@
     </div>
     <div class="text-center">
     <button id="empty-cart" class="btn btn-danger btn-sm" onclick="javascript:emptycart()">Empty cart</button>  
-    <button id="checkout" class="btn btn-primary btn-buy">Finish &amp; pay</button>  
+    <a href="#/checkout/" id="checkout" class="btn btn-primary btn-buy">Finish &amp; pay</a>  
     </div>  
 </div>
 

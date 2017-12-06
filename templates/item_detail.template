@@ -24,3 +24,8 @@
         </div>
   </div>
 
+  <div class="col-xs-12 text-center">
+      <br>
+      <p class="text-muted">(<a href="<%= item.amazon %>">View this item</a> for real on Amazon)</p>      
+  </div>
+

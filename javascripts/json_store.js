@@ -38,6 +38,16 @@ var app = (function($) {
       });
     });
 
+    this.get('#/checkout/', function(context) {
+      var vm = {}
+      var cart = app.session("cart");
+      vm.total = cart.reduce(function(acc, current) {
+        Object.assign(current, context.items[current.id]);
+        return acc += (current.price * current.quantity);
+      },0);
+      this.partial('templates/checkout.template', vm);
+    });
+
     this.post('#/cart', function(context) {
       var item_id = this.params['item_id'];
       // fetch the current cart
